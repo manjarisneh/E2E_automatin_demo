@@ -3,9 +3,9 @@ node {
     stage('Git checkout') { // for display purposes
         git 'https://github.com/manjarisneh/E2E_automation_demo.git'
     }
-    tools {
-        maven 'Maven 3.6.3'
-    }
+//    tools {
+//        maven 'Maven 3.6.3'
+//    }
     stage('Smoke') {
         try {
             sh "mvn clean verify -Dtags='type:Smoke'"
