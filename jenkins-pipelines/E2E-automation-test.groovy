@@ -13,7 +13,7 @@ node {
 
         } finally {
             publishHTML (target: [
-                    reportDir: 'target/site/serenity',
+                    reportDir: 'jenkins-pipelines/E2E-automation-test.groovy',
                     reportFiles: 'index.html',
                     reportName: "Smoke tests report"
             ])
@@ -26,7 +26,7 @@ node {
 
         } finally {
             publishHTML (target: [
-                    reportDir: 'target/site/serenity',
+                    reportDir: 'jenkins-pipelines/E2E-automation-test.groovy',
                     reportFiles: 'index.html',
                     reportName: "API tests report"
             ])
@@ -39,7 +39,7 @@ node {
 
         } finally {
             publishHTML (target: [
-                    reportDir: 'target/site/serenity',
+                    reportDir: 'jenkins-pipelines/E2E-automation-test.groovy',
                     reportFiles: 'index.html',
                     reportName: "UI tests report"
             ])
