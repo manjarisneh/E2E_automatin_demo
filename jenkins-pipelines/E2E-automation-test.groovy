@@ -13,7 +13,7 @@ node {
 
         } finally {
             publishHTML (target: [
-                    reportDir: '/Users/vishwajeetrana/Downloads/e2e-automation-pipeline-master/jenkins-pipelines/E2E-automation-test.groovy',
+                    reportDir: 'target/site/serenity',
                     reportFiles: 'index.html',
                     reportName: "Smoke tests report"
             ])
@@ -26,7 +26,7 @@ node {
 
         } finally {
             publishHTML (target: [
-                    reportDir: '/Users/vishwajeetrana/Downloads/e2e-automation-pipeline-master/jenkins-pipelines/E2E-automation-test.groovy',
+                    reportDir: 'target/site/serenity',
                     reportFiles: 'index.html',
                     reportName: "API tests report"
             ])
@@ -39,7 +39,7 @@ node {
 
         } finally {
             publishHTML (target: [
-                    reportDir: '/Users/vishwajeetrana/Downloads/e2e-automation-pipeline-master/jenkins-pipelines/E2E-automation-test.groovy',
+                    reportDir: 'target/site/serenity',
                     reportFiles: 'index.html',
                     reportName: "UI tests report"
             ])
